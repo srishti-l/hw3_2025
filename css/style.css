@@ -41,7 +41,7 @@ first div in the grid  and place it in the grid. */
 
 .container> :first-child {
      grid-column: 1 / -1;
-     background-image: url("https://github.com/srishti-l/hw3_2025/blob/main/images/header.jpg"); 
+     background-image: url("/images/header.jpg"); 
      background-repeat: no-repeat;
      background-attachment: fixed;
 }
@@ -62,22 +62,18 @@ first div in the grid  and place it in the grid. */
 }
 
 .about, .about-image{
-     /* grid-column: 2 / span 1; */
      grid-row-start: 2;
 }
 
 .method, .method-image {
-     /* grid-column: 2 / span 1; */
      grid-row-start: 3;
 }
 
 .clients, .clients-image {
-     /* grid-column: 2 / span 1; */
      grid-row-start: 4;
 }
 
 .contact, .contact-image {
-     /* grid-column: 2 / span 1; */
      grid-row-start: 5;
 }
 

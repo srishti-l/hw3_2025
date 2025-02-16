@@ -51,51 +51,33 @@ first div in the grid  and place it in the grid. */
 
 /*This will be a lot of rules.... but be strategic and combine seletors*/
 
-.about {
+.about, .method, .clients, .contact {
      grid-column: 2 / span 1;
+}
+
+.about-image, .method-image, .clients-image, .contact-image {
+     grid-column: 1 / -1;
+     max-height: 600px;
+     overflow: hidden;
+}
+
+.about, .about-image{
+     /* grid-column: 2 / span 1; */
      grid-row-start: 2;
 }
 
-.about-image {
-     grid-column: 1 / -1;
-     max-height: 600px;
-     overflow: hidden;
-     grid-row-start: 2;
-}
-
-.method {
-     grid-column: 2 / span 1;
+.method, .method-image {
+     /* grid-column: 2 / span 1; */
      grid-row-start: 3;
 }
 
-.method-image {
-     grid-column: 1 / -1;
-     max-height: 600px;
-     overflow: hidden;
-     grid-row-start: 3;
-}
-
-.clients {
-     grid-column: 2 / span 1;
+.clients, .clients-image {
+     /* grid-column: 2 / span 1; */
      grid-row-start: 4;
 }
 
-.clients-image {
-     grid-column: 1 / -1;
-     max-height: 600px;
-     overflow: hidden;
-     grid-row-start: 4;
-}
-
-.contact {
-     grid-column: 2 / span 1;
-     grid-row-start: 5;
-}
-
-.contact-image {
-     grid-column: 1 / -1;
-     max-height: 600px;
-     overflow: hidden;
+.contact, .contact-image {
+     /* grid-column: 2 / span 1; */
      grid-row-start: 5;
 }
 
